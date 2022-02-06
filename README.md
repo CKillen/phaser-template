@@ -1,27 +1,40 @@
-<h1 align="center">
-  <br>
-  <a href="https://github.com/geocine/phaser3-rollup-typescript#readme"><img src="https://i.imgur.com/6lcIxDs.png" alt="header" width="600"/></a>
-  <br>
-  Phaser 3 TypeScript Starter
-  <br>
-</h1>
+This repo was made from [Geocine's Template](https://github.com/geocine/phaser3-rollup-typescript). Their repo is worth a star! If you don't want the added automated push to github pages, I highly recommend you just use their repo instead.
 
-This is a [Phaser 3](https://github.com/photonstorm/phaser) starter with [TypeScript](https://www.typescriptlang.org/), [Rollup](https://rollupjs.org) with ⚡️ lightning fast HMR through [Vite](https://vitejs.dev/).
+[Geocine's Template](https://github.com/geocine/phaser3-rollup-typescript) provided a [Phaser 3](https://github.com/photonstorm/phaser) starter with [TypeScript](https://www.typescriptlang.org/), [Rollup](https://rollupjs.org) with ⚡️ lightning fast HMR through [Vite](https://vitejs.dev/).
 
-## Available Commands
+I changed a few minor things and added a github workflow that will automatically deploy
+the site to a gh-page branch on push. Follow the below steps.
 
-| Command | Description |
-|---------|-------------|
-| `yarn install` | Install project dependencies |
-| `yarn dev` | Builds project and open web server, watching for changes |
-| `yarn build` | Builds code bundle with production settings  |
-| `yarn serve` | Run a web server to serve built code bundle |
+## Creating your own project off the template
+1. Go to the [Template Repo](https://github.com/CKillen/phaser-template)
+2. Click the green button "Use Template"
+3. Follow instructions. <b>Repo MUST be kept public for gh-pages to work</b>
+5. Clone the created repo and run in project directory
+```
+yarn install
+```
+To run the dev server
+```
+yarn dev
+```
+## Github pages
+You only need to do this once
+1. in the vite.config.ts change the base to what I have below, except with your information put in the < > spots.  
+```
+base: "https://<github-account-name>.github.io/<repo-name>/",
+```
+2. Push to remote
+3. Wait for github action to complete. This may take a couple minutes
+    - You can check next to the commits to see what stage the action is in
+    - Yellow circle - Running the action
+    - Green check - Action successful, give it a minute and it should be on your site
+    - Red X - Action failed. If you can't figure it out Message me (see bottom of README) 
+4. Go to repo's settings
+5. On the left select Pages
+6. Under source click the branch dropdown and select gh-pages
+7. next to the branch dropdown, click the file dropdown and select /docs
+8. Click save and wait a minute
 
-## Development
+It will show you the site url after going through these steps. It should be the exact same as the base you entered earlier. If it is not, copy it and set base to that url and push the change.
 
-After cloning the repo, run `yarn install` from your project directory. Then, you can start the local development
-server by running `yarn dev` and navigate to http://localhost:3000.
-
-## Production
-
-After running `yarn build`, the files you need for production will be on the `dist` folder. To test code on your `dist` folder, run `yarn serve` and navigate to http://localhost:5000
+To contact me for help please either start an issue or contact me via discord. I highly recommend joining [the phaser discord community](https://discord.gg/phaser). After joining the discord you can send a direct message to Hicures#7097.

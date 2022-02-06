@@ -14,11 +14,18 @@ export default class Demo extends Phaser.Scene {
 
     this.tweens.add({
       targets: logo,
-      y: 350,
+      y: 500,
       duration: 1500,
       ease: 'Sine.inOut',
       yoyo: true,
       repeat: -1
     });
+
+    const particles = this.add.particles('logo');
+
+    particles.createEmitter({
+      scale: { start: 1, end: 0 },
+      follow: logo,
+    })
   }
 }
