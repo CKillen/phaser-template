@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import replace from '@rollup/plugin-replace';
 
 export default defineConfig({
-  base: "https://ckillen.github.io/phaser-template/",
+  base: "https://ckillen.github.io/phaser-template-ts/",
   build: {
     rollupOptions: {
       plugins: [
