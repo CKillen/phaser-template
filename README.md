@@ -37,4 +37,4 @@ base: "https://<github-account-name>.github.io/<repo-name>/",
 
 It will show you the site url after going through these steps. It should be the exact same as the base you entered earlier. If it is not, copy it and set base to that url and push the change.
 
-To contact me for help please either start an issue or contact me via discord. I highly recommend joining [the phaser discord community](https://discord.gg/phaser). After joining the discord you can send a direct message to Hicures#7097.
+To contact me for help please either start an issue or contact me via discord. After joining [the phaser discord community](https://discord.gg/phaser) you can send a direct message to Hicures#7097.
