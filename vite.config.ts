@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import replace from '@rollup/plugin-replace';
 
 export default defineConfig({
-  base: "https://ckillen.github.io/phaser-template-ts/",
+  // Replace that <> parts with your own project's information
+  base: "https://<github-account-name>.github.io/<repo-name>/",
   build: {
     rollupOptions: {
       plugins: [
